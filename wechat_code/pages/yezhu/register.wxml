@@ -1,0 +1,41 @@
+<view class="register-container">
+<view class="content">
+<view class="avatar-box">
+<image class="avatar" src="http://clfile.zggen.cn/20231027/4b7b24d658fd400e849c8c2314e29d56.jpg" mode="aspectFit" />
+</view>
+<view class="box">
+<input type="text" placeholder="业主账号" model:value="{{yezhuzhanghao}}"  />
+</view>
+<view class="box">
+    <input type="password" placeholder="请输入密码"     model:value="{{mima}}" />
+</view>
+<view class="box">
+<input type="password" placeholder="请确认密码"     model:value="{{mima2}}"/>
+</view>
+    <view class="box">
+        <input type="text" placeholder="业主姓名" model:value="{{yezhuxingming}}" />
+    </view>
+<view  class="box"    >头像</view>
+<image class="upload-img"   bindtap="touxiangTap"   src="{{tempPathtouxiang}}" mode="aspectFill"></image>
+<picker mode="selector" range="{{xingbieList}}" value="{{xingbieIndex}}" bindchange="xingbieChange">
+    <input type="text" placeholder="性别"  value="{{xingbieList[xingbieIndex]}}" />
+</picker>
+    <view class="box">
+        <input type="text" placeholder="手机号码" model:value="{{shoujihaoma}}" />
+    </view>
+    <view class="box">
+        <input type="text" placeholder="楼栋号" model:value="{{loudonghao}}" />
+    </view>
+    <view class="box">
+        <input type="text" placeholder="房号" model:value="{{fanghao}}" />
+    </view>
+    <view class="box">
+        <input type="text" placeholder="身份证" model:value="{{shenfenzheng}}" />
+    </view>
+    <view class="box">
+        <input type="text" placeholder="车牌号" model:value="{{chepaihao}}" />
+    </view>
+    <button class="register-btn" bindtap="register">注册</button>
+
+</view>
+</view>

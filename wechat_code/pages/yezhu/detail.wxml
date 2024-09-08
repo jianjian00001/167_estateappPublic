@@ -1,0 +1,106 @@
+<view class="detail-container">
+<view class="content"   bind:tap="authTap">
+
+
+
+
+<swiper indicator-dots="{{true}}" autoplay="{{true}}" interval="{{5000}}" class="swiper" vertical="{{false}}" interval="{{5000}}" duration="{{500}}"  indicator-color='#6484ff30'   indicator-active-color="#6484ff"   autoplay="{{true}}"  circular="{{true}}">
+<swiper-item class="swiper-item"  wx:for="{{picture}}"   wx:key="{{index}}">
+    <image src="{{baseURL+item}}" mode="aspectFit"   class="swiper-img"></image>
+    <view   wx:if="$conf.menu.flag"  class="swiper-title">{{item.title}}</view>
+</swiper-item>
+</swiper>
+
+
+
+
+
+
+<view class="detail-box">
+
+
+    <!-- ${column.loginUser}, yezhuxingming,普-->
+<view class="detail-item-box" >
+<view class="detail-item-label">业主姓名：</view>
+<view class="detail-item-text">{{detailList.yezhuxingming}}</view>
+</view>
+
+
+<view class="detail-detail-img-box">
+<view class="detail-item-label">头像：</view>
+<image class="detail-detail-img-img" wx:if="{{detailList.touxiang}}"  src="{{baseURL+picture[0]}}"></image>
+</view>
+    <!-- ${column.loginUser}, xingbie,下-->
+<view class="detail-item-box" >
+<view class="detail-item-label">性别：</view>
+<view class="detail-item-text">{{detailList.xingbie}}</view>
+</view>
+
+
+    <!-- ${column.loginUser}, shoujihaoma,普-->
+<view class="detail-item-box" >
+<view class="detail-item-label">手机号码：</view>
+<view class="detail-item-text">{{detailList.shoujihaoma}}</view>
+</view>
+
+
+    <!-- ${column.loginUser}, loudonghao,普-->
+<view class="detail-item-box" >
+<view class="detail-item-label">楼栋号：</view>
+<view class="detail-item-text">{{detailList.loudonghao}}</view>
+</view>
+
+
+    <!-- ${column.loginUser}, fanghao,普-->
+<view class="detail-item-box" >
+<view class="detail-item-label">房号：</view>
+<view class="detail-item-text">{{detailList.fanghao}}</view>
+</view>
+
+
+    <!-- ${column.loginUser}, shenfenzheng,普-->
+<view class="detail-item-box" >
+<view class="detail-item-label">身份证：</view>
+<view class="detail-item-text">{{detailList.shenfenzheng}}</view>
+</view>
+
+
+    <!-- ${column.loginUser}, chepaihao,普-->
+<view class="detail-item-box" >
+<view class="detail-item-label">车牌号：</view>
+<view class="detail-item-text">{{detailList.chepaihao}}</view>
+</view>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</view>
+
+
+
+
+
+
+
+
+<view class="operate-box">
+
+
+    
+
+
+</view>
+
+</view>
+</view>

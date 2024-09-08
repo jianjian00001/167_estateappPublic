@@ -1,0 +1,125 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/login/login",
+    "pages/forget/forget",
+  "pages/yezhu/register",
+
+    "pages/pay-confirm/pay-confirm",
+    "pages/user-info/user-info",
+
+
+
+    "pages/reply/reply",
+
+
+    "component/dateTimePicker/dateTime",
+    "component/com-date/com-date",
+    "component/com-editor/com-editor",
+    "component/edit-and-add/edit-and-add",
+    "component/comment-item/comment-item",
+    "component/com-popup/com-popup",
+    "component/com-video/com-video",
+    "component/com-manySel/com-manySel",
+    "component/tree-menu/tree-menu",
+  "pages/news/detail",
+  "pages/news/list",
+   "pages/yezhu/detail",
+    "pages/yezhu/update-and-add",
+    "pages/yezhu/list",
+   "pages/jiaofeileixing/detail",
+    "pages/jiaofeileixing/update-and-add",
+    "pages/jiaofeileixing/list",
+   "pages/jiaofeixinxi/detail",
+    "pages/jiaofeixinxi/update-and-add",
+    "pages/jiaofeixinxi/list",
+   "pages/weixiuleixing/detail",
+    "pages/weixiuleixing/update-and-add",
+    "pages/weixiuleixing/list",
+   "pages/weixiushenqing/detail",
+    "pages/weixiushenqing/update-and-add",
+    "pages/weixiushenqing/list",
+   "pages/weixiuxinxi/detail",
+    "pages/weixiuxinxi/update-and-add",
+    "pages/weixiuxinxi/list",
+   "pages/laifangcheliang/detail",
+    "pages/laifangcheliang/update-and-add",
+    "pages/laifangcheliang/list",
+   "pages/jiaofeitixing/detail",
+    "pages/jiaofeitixing/update-and-add",
+    "pages/jiaofeitixing/list",
+   "pages/changzhurenkou/detail",
+    "pages/changzhurenkou/update-and-add",
+    "pages/changzhurenkou/list",
+   "pages/cheweixinxi/detail",
+    "pages/cheweixinxi/update-and-add",
+    "pages/cheweixinxi/list",
+   "pages/cheliangruchang/detail",
+    "pages/cheliangruchang/update-and-add",
+    "pages/cheliangruchang/list",
+   "pages/cheliangchuchang/detail",
+    "pages/cheliangchuchang/update-and-add",
+    "pages/cheliangchuchang/list",
+    "pages/addcomment/addcomment",
+    "pages/center/center"
+  ],
+  "permission": {
+    "scope.userLocation": {
+      "desc": "你的位置信息将用于小程序位置接口的"
+    }
+  },
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "Weixin",
+    "navigationBarTextStyle": "black"
+  },
+
+  "tabBar": {
+    "selectedColor": "#33a3dc",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "iconPath": "/static/index.png",
+        "selectedIconPath": "/static/index1.png",
+        "text": "首页"
+      },
+
+
+{
+  "pagePath": "pages/news/list",
+  "iconPath": "static/tabs/2/news.png",
+  "selectedIconPath": "static/tabs/2/news_act.png",
+  "text": "公告信息"
+},
+
+
+
+
+
+
+
+
+
+
+  {
+  "pagePath": "pages/cheweixinxi/list",
+    "iconPath": "/static/tabs/2/icon1.png",
+    "selectedIconPath": "/static/tabs/2/icon1_act.png",
+      "text": "车位信息"
+  },
+
+
+
+
+      {
+        "pagePath": "pages/center/center",
+        "iconPath": "static/tabs/2/mine.png",
+        "selectedIconPath": "static/tabs/2/mine1.png",
+        "text": "我的"
+      }
+
+    ]
+  },
+  "sitemapLocation": "sitemap.json"
+}

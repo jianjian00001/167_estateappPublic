@@ -1,0 +1,95 @@
+
+<view class="update-container">
+ <view class="content">
+     <view class="form-box">
+    <view class="item-box">
+        <view class="item-label">业主账号</view>
+        <input  class="item-input"
+
+
+
+
+
+
+                type="text"  disabled="{{ro.yezhuzhanghao==true}}"  placeholder="业主账号" model:value="{{yezhuzhanghao}}" />
+    </view>
+
+    <view class="item-box">
+        <view class="item-label">业主姓名</view>
+        <input  class="item-input"
+
+
+
+
+
+
+                type="text"  disabled="{{ro.yezhuxingming==true}}"  placeholder="业主姓名" model:value="{{yezhuxingming}}" />
+    </view>
+
+    <view class="item-box">
+        <view class="item-label">楼栋号</view>
+        <input  class="item-input"
+
+
+
+
+
+
+                type="text"  disabled="{{ro.loudonghao==true}}"  placeholder="楼栋号" model:value="{{loudonghao}}" />
+    </view>
+
+    <view class="item-box">
+        <view class="item-label">房号</view>
+        <input  class="item-input"
+
+
+
+
+
+
+                type="text"  disabled="{{ro.fanghao==true}}"  placeholder="房号" model:value="{{fanghao}}" />
+    </view>
+
+<view class="item-box">
+    <view class="item-label" >维修类型</view>
+    <picker   class="down-item-picker"     bindchange="weixiuleixingChange" value="{{weixiuleixingIndex}}"  range="{{weixiuleixingList}}">
+                <view class="down-item-picker-text">
+                    {{weixiuleixingIndex||weixiuleixingIndex==0?weixiuleixingList[weixiuleixingIndex]:"请选择维修类型"}}
+                </view>
+    </picker>
+</view>
+    <view class="item-box"  >
+        <view class="item-label">报修时间</view>
+        <view class="down-item-picker"  bindtap="onbaoxiushijianTap">
+            <view class="down-item-picker-text">         {{baoxiushijian}}</view>
+        </view>
+    </view>
+    <com-date isShowPicker="{{showbaoxiushijian}}" bind:dateHandler="baoxiushijianTap"></com-date>
+<view class="item-box">
+    <view class="item-label" >维修状态</view>
+    <picker   class="down-item-picker"  bindchange="weixiuzhuangtaiChange" value="{{weixiuzhuangtaiIndex}}"  range="{{weixiuzhuangtaiList}}">
+                <view class="down-item-picker-text">
+                    {{weixiuzhuangtaiIndex||weixiuzhuangtaiIndex==0?weixiuzhuangtaiList[weixiuzhuangtaiIndex]:"请选择维修状态"}}
+                </view>
+    </picker>
+</view>
+<view class="item-box"  >
+    <view class="item-label">报修内容</view>
+
+    <textarea model:value="{{baoxiuneirong}}" placeholder="报修内容"     data-info="{{baoxiuneirong}}" maxlength="300" id="baoxiuneirong"></textarea>
+</view>
+
+     </view>
+
+
+     <view class="btn-box">
+
+
+
+  <button     class="submit-btn" bindtap="submit">提交</button>
+     </view>
+
+
+    </view>
+
+</view>

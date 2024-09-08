@@ -1,0 +1,168 @@
+.treeList {
+box-sizing: border-box;
+position: relative;
+font-size: 30rpx;
+margin: 20rpx 0;
+}
+
+.line {
+position: absolute;
+height: calc(100% - 30rpx);
+width: 0px;
+border-left: 2rpx dashed #999999;
+left: 20rpx;
+top: 46rpx;
+}
+
+treeList:last-of-type>.treeList>.line {
+display: none;
+}
+
+.title {
+display: flex;
+align-items: center;
+}
+
+.title .icon {
+height: 38rpx;
+width: 38rpx;
+line-height: 38rpx;
+text-align: center;
+margin-right: 10rpx;
+border: 2rpx solid #cccccc;
+color: #cccccc;
+}
+
+.title .icon .dot {
+width: 20rpx;
+height: 20rpx;
+background: #f0f0f0;
+margin: 9rpx 0 0 9rpx;
+border-radius: 50%;
+}
+
+.title text {
+margin-right: 6rpx;
+}
+
+.title text.iconfont {
+font-size: 42rpx;
+}
+
+.title text.icon-tianjia {
+margin-left: 6rpx;
+font-size: 36rpx;
+}
+
+.title .btn {
+padding: 8rpx 20rpx;
+border: 2rpx solid #555555;
+color: #555555;
+font-size: 24rpx;
+margin-left: 4rpx;
+border-radius: 8rpx;
+}
+
+.title .text {
+padding: 6rpx 10rpx;
+border-radius: 10rpx;
+text-align: center;
+box-sizing: border-box;
+}
+
+
+
+/* 组件 */
+
+.list-item{
+border
+:0px solid #6fcbcb60;
+padding
+:0px 0px;
+margin
+:0 0 0px 0;
+border-color
+:#eeeeee;
+align-items
+:center;
+text-align
+:center;
+display
+:flex;
+transition
+:all 0s;
+border-radius
+:0px;
+flex-wrap
+:wrap;
+background
+:#ffffff;
+border-width
+:0 0 2rpx 0;
+width
+:100%;
+position
+:relative;
+border-style
+:solid;
+height
+:92rpx;
+}
+.list-icon{
+color
+:#999999;
+top
+:32rpx;
+width
+:28rpx;
+line-height
+:28rpx;
+font-size
+:28rpx;
+position
+:absolute;
+right
+:20rpx;
+right: 10rpx!important;
+}
+.second-box .list-icon {
+top: 0 !important;
+
+}
+.list-text{
+padding
+:0 20rpx 0 20rpx;
+margin
+:0 0 0 0;
+color
+:#333333;
+display
+:inline-block;
+width
+:auto;
+line-height
+:48rpx;
+font-size
+:28rpx;
+}
+.second-box{
+width
+:100%;
+padding
+:0px;
+margin
+:0 0 24rpx 0;
+justify-content: space-between;
+display: flex;
+align-items: center;
+}
+.list-img{
+width
+:48rpx;
+font-size
+:48rpx;
+color
+:#2f72e3;
+display
+:inline-block;
+}

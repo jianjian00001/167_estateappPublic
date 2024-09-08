@@ -1,0 +1,89 @@
+<view class="detail-container">
+<view class="content"   bind:tap="authTap">
+
+
+
+
+
+
+
+
+<view class="detail-box">
+
+
+<view class="detail-item-box" >
+<view class="detail-item-label">业主账号：</view>
+<view class="detail-item-text">{{detailList.yezhuzhanghao}}</view>
+</view>
+    <!-- ${column.loginUser}, yezhuxingming,普-->
+<view class="detail-item-box" >
+<view class="detail-item-label">业主姓名：</view>
+<view class="detail-item-text">{{detailList.yezhuxingming}}</view>
+</view>
+
+
+<view class="detail-item-box" >
+<view class="detail-item-label">楼栋号：</view>
+<view class="detail-item-text">{{detailList.loudonghao}}</view>
+</view>
+    <!-- ${column.loginUser}, fanghao,普-->
+<view class="detail-item-box" >
+<view class="detail-item-label">房号：</view>
+<view class="detail-item-text">{{detailList.fanghao}}</view>
+</view>
+
+
+<view class="detail-item-box" >
+<view class="detail-item-label">维修类型：</view>
+<view class="detail-item-text">{{detailList.weixiuleixing}}</view>
+</view>
+    <!-- ${column.loginUser}, baoxiushijian,普-->
+<view class="detail-item-box" >
+<view class="detail-item-label">报修时间：</view>
+<view class="detail-item-text">{{detailList.baoxiushijian}}</view>
+</view>
+
+
+    <!-- ${column.loginUser}, weixiurenyuan,普-->
+<view class="detail-item-box" >
+<view class="detail-item-label">维修人员：</view>
+<view class="detail-item-text">{{detailList.weixiurenyuan}}</view>
+</view>
+
+
+<view class="detail-item-box" >
+<view class="detail-item-label">维修时间：</view>
+<view class="detail-item-text">{{detailList.addtime}}</view>
+</view>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</view>
+
+
+
+
+
+
+
+
+<view class="operate-box">
+
+
+    
+
+
+</view>
+
+</view>
+</view>

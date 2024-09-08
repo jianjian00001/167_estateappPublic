@@ -1,0 +1,109 @@
+
+<view class="update-container">
+ <view class="content">
+     <view class="form-box">
+    <view class="item-box">
+        <view class="item-label">业主账号</view>
+        <input  class="item-input"
+
+
+
+
+
+
+                type="text"  disabled="{{ro.yezhuzhanghao==true}}"  placeholder="业主账号" model:value="{{yezhuzhanghao}}" />
+    </view>
+
+    <view class="item-box">
+        <view class="item-label">业主姓名</view>
+        <input  class="item-input"
+
+
+
+
+
+
+                type="text"  disabled="{{ro.yezhuxingming==true}}"  placeholder="业主姓名" model:value="{{yezhuxingming}}" />
+    </view>
+
+    <view class="item-box">
+        <view class="item-label">楼栋号</view>
+        <input  class="item-input"
+
+
+
+
+
+
+                type="text"  disabled="{{ro.loudonghao==true}}"  placeholder="楼栋号" model:value="{{loudonghao}}" />
+    </view>
+
+    <view class="item-box">
+        <view class="item-label">房号</view>
+        <input  class="item-input"
+
+
+
+
+
+
+                type="text"  disabled="{{ro.fanghao==true}}"  placeholder="房号" model:value="{{fanghao}}" />
+    </view>
+
+    <view class="item-box">
+        <view class="item-label">维修类型</view>
+        <input  class="item-input"
+
+
+
+
+
+
+                type="text"  disabled="{{ro.weixiuleixing==true}}"  placeholder="维修类型" model:value="{{weixiuleixing}}" />
+    </view>
+
+    <view class="item-box">
+        <view class="item-label">报修时间</view>
+        <input  class="item-input"
+
+
+
+
+
+
+                type="text"  disabled="{{ro.baoxiushijian==true}}"  placeholder="报修时间" model:value="{{baoxiushijian}}" />
+    </view>
+
+    <view class="item-box">
+        <view class="item-label">维修人员</view>
+        <input  class="item-input"
+
+
+
+
+
+
+                type="text"  disabled="{{ro.weixiurenyuan==true}}"  placeholder="维修人员" model:value="{{weixiurenyuan}}" />
+    </view>
+
+    <view class="item-box"  >
+        <view class="item-label">维修时间</view>
+        <view class="down-item-picker"  bindtap="onweixiushijianTap">
+            <view class="down-item-picker-text">         {{weixiushijian}}</view>
+        </view>
+    </view>
+    <com-date isShowPicker="{{showweixiushijian}}" bind:dateHandler="weixiushijianTap"></com-date>
+     </view>
+
+
+     <view class="btn-box">
+
+
+
+  <button     class="submit-btn" bindtap="submit">提交</button>
+     </view>
+
+
+    </view>
+
+</view>

@@ -1,0 +1,30 @@
+
+<view class="update-container">
+ <view class="content">
+     <view class="form-box">
+    <view class="item-box">
+        <view class="item-label">维修类型</view>
+        <input  class="item-input"
+
+
+
+
+
+
+                type="text"  disabled="{{ro.weixiuleixing==true}}"  placeholder="维修类型" model:value="{{weixiuleixing}}" />
+    </view>
+
+     </view>
+
+
+     <view class="btn-box">
+
+
+
+  <button     class="submit-btn" bindtap="submit">提交</button>
+     </view>
+
+
+    </view>
+
+</view>

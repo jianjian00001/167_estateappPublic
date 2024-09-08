@@ -1,0 +1,9 @@
+{
+  "usingComponents": {
+    "com-video": "/component/com-video/com-video",
+    "com-popup": "/component/com-popup/com-popup"
+  },
+  "navigationBarTitleText": "维修类型",
+  "navigationBarBackgroundColor":"#FFFFFF",
+  "navigationBarTextStyle": "black"
+}

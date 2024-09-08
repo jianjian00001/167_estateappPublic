@@ -1,0 +1,72 @@
+<view class="register-container">
+<view class="content">
+<view class="userInfo-from">
+    <!-- yezhuzhanghao，普,去  -->
+
+
+    <view class="item-box" wx:if="{{tableName=='yezhu'}}"  >
+        <view class="item-label">业主账号</view>
+        <input  class="item-input" type="text"    disabled="true" placeholder="业主账号" model:value="{{yezhuzhanghao}}" />
+    </view>
+    <!-- yezhuxingming，普,$column.unique  -->
+
+
+    <view class="item-box" wx:if="{{tableName=='yezhu'}}"  >
+        <view class="item-label">业主姓名</view>
+        <input  class="item-input" type="text"    placeholder="业主姓名" model:value="{{yezhuxingming}}" />
+    </view>
+    <view class="item-box" wx:if="{{tableName=='yezhu'}}" >
+        <view  class="item-label"   bindtap="touxiangTap"  >头像</view>
+        <image class="item-img"   bindtap="touxiangTap"   src="{{tempPathtouxiang}}" mode="aspectFill"></image>
+    </view>
+    <view class="item-box" wx:if="{{tableName=='yezhu'}}">
+        <text   class="item-label"  >性别</text>
+        <picker   class="down-item-picker" mode="selector" range="{{xingbieList}}" value="{{xingbieIndex}}" bindchange="xingbieChange">
+            <view class="down-item-picker-text">{{xingbieList[xingbieIndex]}}</view>
+        </picker>
+    </view>
+    <!-- shoujihaoma，普,$column.unique  -->
+
+
+    <view class="item-box" wx:if="{{tableName=='yezhu'}}"  >
+        <view class="item-label">手机号码</view>
+        <input  class="item-input" type="text"    placeholder="手机号码" model:value="{{shoujihaoma}}" />
+    </view>
+    <!-- loudonghao，普,$column.unique  -->
+
+
+    <view class="item-box" wx:if="{{tableName=='yezhu'}}"  >
+        <view class="item-label">楼栋号</view>
+        <input  class="item-input" type="text"    placeholder="楼栋号" model:value="{{loudonghao}}" />
+    </view>
+    <!-- fanghao，普,$column.unique  -->
+
+
+    <view class="item-box" wx:if="{{tableName=='yezhu'}}"  >
+        <view class="item-label">房号</view>
+        <input  class="item-input" type="text"    placeholder="房号" model:value="{{fanghao}}" />
+    </view>
+    <!-- shenfenzheng，普,$column.unique  -->
+
+
+    <view class="item-box" wx:if="{{tableName=='yezhu'}}"  >
+        <view class="item-label">身份证</view>
+        <input  class="item-input" type="text"    placeholder="身份证" model:value="{{shenfenzheng}}" />
+    </view>
+    <!-- chepaihao，普,$column.unique  -->
+
+
+    <view class="item-box" wx:if="{{tableName=='yezhu'}}"  >
+        <view class="item-label">车牌号</view>
+        <input  class="item-input" type="text"    placeholder="车牌号" model:value="{{chepaihao}}" />
+    </view>
+<view class="btn-box">
+    <button class="save-btn" bindtap="saveTap">保存</button>
+    <button class="quite-btn" bindtap="quitTap">退出登录</button>
+
+</view>
+
+</view>
+
+</view>
+</view>

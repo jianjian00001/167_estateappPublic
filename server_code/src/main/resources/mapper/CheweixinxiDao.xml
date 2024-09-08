@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.cl.dao.CheweixinxiDao">
+
+	<!-- 可根据自己的需求，是否要使用 -->
+    <resultMap type="com.cl.entity.CheweixinxiEntity" id="cheweixinxiMap">
+        <result property="cheweibianhao" column="cheweibianhao"/>
+        <result property="cheweimingcheng" column="cheweimingcheng"/>
+        <result property="cheweitupian" column="cheweitupian"/>
+        <result property="cheweiweizhi" column="cheweiweizhi"/>
+        <result property="bangdingchepaihao" column="bangdingchepaihao"/>
+        <result property="cheweizhuangtai" column="cheweizhuangtai"/>
+        <result property="cheweixiangxi" column="cheweixiangxi"/>
+    </resultMap>
+
+    <select id="selectListView"
+		resultType="com.cl.entity.view.CheweixinxiView" >
+
+		SELECT  cheweixinxi.* FROM cheweixinxi  cheweixinxi 	        
+        <where> 1=1 ${ew.sqlSegment}</where>
+	</select>
+	
+	<select id="selectView"
+		resultType="com.cl.entity.view.CheweixinxiView" >
+		SELECT * FROM cheweixinxi  cheweixinxi <where> 1=1 ${ew.sqlSegment}</where>
+	</select>
+	
+
+</mapper>
